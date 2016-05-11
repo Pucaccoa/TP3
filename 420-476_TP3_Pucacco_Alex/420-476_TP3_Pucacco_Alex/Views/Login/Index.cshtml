@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>@ViewBag.hello</p>
+@using (Html.BeginForm("Index", "Login", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>
+                <span>Login</span>
+                
+            </td>
+            <td>
+                <input type="text" name="Login" />
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <span>Mot de Passe</span>
+            </td>
+            <td>
+                <input type="password" name="Password" />
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <input type="submit" name="productSubmit" value="Rechercher">
+            </td>
+        </tr>
+    </table>
+}
+
